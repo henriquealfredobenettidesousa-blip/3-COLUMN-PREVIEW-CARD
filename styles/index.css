@@ -40,6 +40,10 @@ body {
   letter-spacing: var(--ls-p);
 
   padding: 4rem 1rem;
+
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
 p {
@@ -94,11 +98,31 @@ button {
   display: grid;
   gap: 2rem;
   padding: 2rem;
+
+  text-align: start;
+}
+
+.container {
+  background-color: var(--gray-100);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (width >= 800px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  button {
+    margin-top: 4rem;
+  }
+
+  p {
+    max-width:250px;
+  }
+
+  .cards {
+    padding: 3rem;
   }
 }
