@@ -95,3 +95,10 @@ button {
   gap: 2rem;
   padding: 2rem;
 }
+
+@media (width >= 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
