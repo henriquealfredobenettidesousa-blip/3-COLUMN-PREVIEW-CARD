@@ -24,6 +24,74 @@
   --ff-headings: "Big Shoulders", "Sans Serif";
   --ff-body: "Lexend Deca", "Sans Serif";
 
-  --fw-regular: 400;
-  --fw-bold: 700;
+  --fw-regular: 300;
+  --fw-bold: 600;
+
+  --ls-p: 0.1rem;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+
+  background-color: var(--gray-100);
+  color: var(--trasnparent-white);
+
+  letter-spacing: var(--ls-p);
+
+  padding: 4rem 1rem;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-family: var(--ff-headings);
+  color: var(--gray-100);
+  font-weight: var(--fw-bold);
+}
+
+.card-1 {
+  background-color: var(--Gold-500);
+}
+
+.card-2 {
+  background-color: var(--Cyan-800);
+}
+
+.card-3 {
+  background-color: var(--Green-950);
+}
+
+button {
+  background-color: var(--gray-100);
+
+  border-style: none;
+  border-radius: 22px;
+  
+  padding: 0.75rem 1rem;
+
+  width: 140px;
+
+  font-weight: var(--fw-bold);
+  font-family: var(--ff-body);
+}
+
+.button-1 {
+  color: var(--Gold-500);
+}
+
+.button-2 {
+  color: var(--Cyan-800);
+}
+
+.button-3 {
+  color: var(--Green-950);
+}
+
+.cards {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem;
 }
