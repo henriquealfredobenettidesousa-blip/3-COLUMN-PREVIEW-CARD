@@ -15,14 +15,14 @@
   --Cyan-800: hsl(184, 100%, 22%);
   --Green-950: hsl(179, 100%, 13%);
 
-  --trasnparent-white: hsla(0, 0%, 100%, 0.75);  /* paragraphs */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);  /* paragraphs */
   --gray-100: hsl(0, 0%, 95%);  /* background, headings, buttons */
 
   /* typography */
   --fs-body: 15px;
 
-  --ff-headings: "Big Shoulders", "Sans Serif";
-  --ff-body: "Lexend Deca", "Sans Serif";
+  --ff-headings: "Big Shoulders", sans-serif;
+  --ff-body: "Lexend Deca", sans-serif;
 
   --fw-regular: 300;
   --fw-bold: 600;
@@ -35,7 +35,7 @@ body {
   font-weight: var(--fw-regular);
 
   background-color: var(--gray-100);
-  color: var(--trasnparent-white);
+  color: var(--transparent-white);
 
   letter-spacing: var(--ls-p);
 
@@ -82,7 +82,10 @@ button {
   font-weight: var(--fw-bold);
   font-family: var(--ff-body);
 
-  transition: all 0.15s;
+  transition: 
+    background-color: 0.15s,
+    color: 0.15s,
+    border-color: 0.15s
 }
 
 button:hover {
